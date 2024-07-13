@@ -93,6 +93,21 @@
 			<version>0.0.3</version>
 		</dependency>
 		<!--PDF End-->
+
+		<!--Swagger Start, Swagger has some version conflicts, need to consider spring doc open api to chg 1.6.9-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		<!--Swagger End-->
+
 	</dependencies>
 
 	<build>

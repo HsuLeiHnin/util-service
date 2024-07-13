@@ -41,7 +41,7 @@ public class CommonApi {
 
     @RequestMapping(value = "/pdf-template", method = RequestMethod.GET)
     public void pdfFieldMapper(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        log.info("Request - API for HTML to PDF");
+        log.info("Request - API for PDF Field Mapping");
         try {
             InputStream inputStream = commonService.pdfFieldMapper();
 
