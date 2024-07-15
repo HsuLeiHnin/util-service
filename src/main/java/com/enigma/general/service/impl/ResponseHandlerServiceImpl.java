@@ -5,7 +5,6 @@ import com.enigma.general.service.ResponseHandlerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import static com.enigma.general.constant.ErrorConstant.*;
 
@@ -39,8 +38,8 @@ public class ResponseHandlerServiceImpl implements ResponseHandlerService {
     }
 
     @Override
-    public ResponseEntity<?> commonResHandler(String errorCode) {
-        CommonResBody commonResBody = statusCodeHandler(errorCode);
+    public ResponseEntity<?> commonResHandler(String code) {
+        CommonResBody commonResBody = statusCodeHandler(code);
         return new ResponseEntity(commonResBody, commonResBody.getHttpStatus());
     }
 }
