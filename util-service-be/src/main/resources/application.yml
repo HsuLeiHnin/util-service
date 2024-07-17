@@ -1,0 +1,8 @@
+server:
+  port: 2001
+#  servlet:
+#    context-path: /myapp
+
+grpc:
+  port: 1995
+  enabled: true

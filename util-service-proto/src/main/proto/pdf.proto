@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.enigma;
+
+option java_multiple_files = true;
+option java_package = "com.enigma";
+
+service PdfService{
+ rpc HtmlStringToPdf(PdfRequest) returns(PdfResponse);
+}
+
+message PdfRequest{
+    string htmlString = 1;
+}
+
+message PdfResponse{
+    bytes pdfByte = 1;
+}
